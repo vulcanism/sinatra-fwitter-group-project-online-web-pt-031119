@@ -38,7 +38,7 @@ class TweetsController < ApplicationController
   end
   
   get "/tweets/:id/edit" do
-    
+    @tweet = Tweet.find_by_id(params[:id])
   end
 
 
