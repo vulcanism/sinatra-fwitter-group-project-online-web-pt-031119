@@ -37,6 +37,8 @@ class UsersController < ApplicationController
     end
   end
   
+  get "/users/:slug"
+  
   get "/logout" do
     if logged_in?
       session.destroy
