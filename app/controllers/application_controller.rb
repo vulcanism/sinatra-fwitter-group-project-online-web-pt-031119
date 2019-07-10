@@ -19,6 +19,10 @@ class ApplicationController < Sinatra::Base
       
     end
     
+    def current_user
+      
+    end
+    
   end
 
 end
