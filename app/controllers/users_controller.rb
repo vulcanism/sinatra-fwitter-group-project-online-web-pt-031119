@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   end
   
   post "/signup" do
+    @user = User.new(params)
     
   end
 
