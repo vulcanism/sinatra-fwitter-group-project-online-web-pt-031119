@@ -8,6 +8,10 @@ class TweetsController < ApplicationController
       redirect "/login"
     end
   end
+  
+  get "/tweets/new" do
+    
+  end
 
 
 end
