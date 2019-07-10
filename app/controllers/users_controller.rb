@@ -38,7 +38,7 @@ class UsersController < ApplicationController
   end
   
   get "/users/:slug" do
-    @user = User.find_by()
+    @user = User.find_by_slug()
   end
   
   get "/logout" do
