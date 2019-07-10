@@ -50,7 +50,7 @@ class TweetsController < ApplicationController
   
   patch "/tweets/:id" do
     @tweet = Tweet.find_by_id(params[:id])
-    @tweet.update
+    @tweet.update(content: params[:content])
   end
 
 
