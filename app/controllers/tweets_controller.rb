@@ -64,6 +64,7 @@ class TweetsController < ApplicationController
       if @tweet && @tweet.user == current_user
         @tweet.delete
         redirect "/tweets"
+      end
     else
       redirect "/login"
     end
