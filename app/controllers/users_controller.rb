@@ -1,7 +1,8 @@
 class UsersController < ApplicationController
   
   get "/signup" do
-    if !logged_in?
+    if logged_in?
+  else
     erb :"/users/signup"
   end
   
