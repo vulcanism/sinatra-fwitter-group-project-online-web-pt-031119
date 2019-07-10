@@ -9,6 +9,8 @@ class UsersController < ApplicationController
       @user = User.new(params)
       @user.save
       redirect "/tweets"
+    else
+      redirect "/signup"
     end
   end
 
