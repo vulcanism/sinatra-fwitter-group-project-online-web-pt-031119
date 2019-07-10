@@ -57,6 +57,10 @@ class TweetsController < ApplicationController
       redirect "/tweets/#{@tweet.id}/edit"
     end
   end
+  
+  delete "/tweets/:id/delete" do
+    
+  end
 
 
 end
