@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   end
   
   post "/signup" do
+    if params
     @user = User.new(params)
     @user.save
     redirect "/tweets"
