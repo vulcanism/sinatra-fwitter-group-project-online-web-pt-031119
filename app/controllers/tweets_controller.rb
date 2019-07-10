@@ -16,6 +16,10 @@ class TweetsController < ApplicationController
       redirect "/login"
     end
   end
+  
+  post "/tweets" do
+    
+  end
 
 
 end
