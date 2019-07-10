@@ -50,6 +50,7 @@ class TweetsController < ApplicationController
   
   patch "/tweets/:id" do
     @tweet = Tweet.find_by_id(params[:id])
+    if 
     @tweet.update(content: params[:content])
     redirect "/tweets/#{@tweet.id}"
   end
