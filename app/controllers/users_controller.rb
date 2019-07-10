@@ -28,7 +28,7 @@ class UsersController < ApplicationController
   end
   
   post "/login" do
-    @user = User.find_by()
+    @user = User.find_by(:username => )
   end
 
 
