@@ -36,6 +36,10 @@ class UsersController < ApplicationController
       redirect "/login"
     end
   end
+  
+  get "/logout" do
+    
+  end
 
 
 end
