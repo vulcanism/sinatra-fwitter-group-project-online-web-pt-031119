@@ -3,7 +3,7 @@
 <% if logged_in? %>
 <%= @error %>
   <form action='/tweets' method="post">
-  <input type="hidden" 
+  <input type="hidden" name="_method" 
     Content:
     <input type="text" name="content"><br>
     Create Your Tweet:
