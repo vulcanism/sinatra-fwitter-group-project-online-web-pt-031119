@@ -29,7 +29,8 @@ class TweetsController < ApplicationController
   end
   
   get "/tweets/:id" do
-    @tweet = Tweet.find_by_id()
+    @tweet = Tweet.find_by_id(params[:id])
+    
   end
 
 
