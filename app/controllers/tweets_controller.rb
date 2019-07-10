@@ -21,6 +21,7 @@ class TweetsController < ApplicationController
     @tweet = Tweet.new(params)
     @tweet.user = current_user
     @tweet.save
+    redirect "/tweets"
   end
 
 
