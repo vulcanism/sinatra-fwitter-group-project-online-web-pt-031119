@@ -62,7 +62,7 @@ class TweetsController < ApplicationController
     if logged_in?
       
     else
-      
+      redirect "/login"
     end
   end
 
