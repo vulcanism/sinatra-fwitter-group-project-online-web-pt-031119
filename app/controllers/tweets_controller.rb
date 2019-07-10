@@ -59,7 +59,11 @@ class TweetsController < ApplicationController
   end
   
   delete "/tweets/:id/delete" do
-    
+    if logged_in?
+      
+    else
+      
+    end
   end
 
 
