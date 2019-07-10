@@ -37,7 +37,9 @@ class UsersController < ApplicationController
     end
   end
   
-  get "/users/:slug"
+  get "/users/:slug" do
+    
+  end
   
   get "/logout" do
     if logged_in?
