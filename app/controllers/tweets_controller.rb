@@ -19,7 +19,7 @@ class TweetsController < ApplicationController
   
   post "/tweets" do
     @tweet = Tweet.new(params)
-    
+    @tweet.user = current_user
   end
 
 
