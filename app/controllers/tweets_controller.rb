@@ -27,6 +27,10 @@ class TweetsController < ApplicationController
       redirect "/tweets/new"
     end
   end
+  
+  get "/tweets/:id" do
+    
+  end
 
 
 end
