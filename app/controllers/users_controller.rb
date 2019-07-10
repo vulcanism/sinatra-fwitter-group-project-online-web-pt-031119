@@ -6,9 +6,9 @@ class UsersController < ApplicationController
   
   post "/signup" do
     if params[:username] != ""
-    @user = User.new(params)
-    @user.save
-    redirect "/tweets"
+      @user = User.new(params)
+      @user.save
+      redirect "/tweets"
     end
   end
 
