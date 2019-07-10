@@ -13,6 +13,8 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
   
-  
+  helpers do
+    
+  end
 
 end
