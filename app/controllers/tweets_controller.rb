@@ -23,6 +23,8 @@ class TweetsController < ApplicationController
       @tweet.user = current_user
       @tweet.save
       redirect "/tweets"
+    else
+      redirect "/tweets/new"
   end
 
 
