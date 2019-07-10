@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     if params[:username] != "" && params[:email] != "" && params[:password] != ""
       @user = User.new(params)
       @user.save
-      session[:user_id]
+      session[:user_id] = @user.id
       redirect "/tweets"
     else
       redirect "/signup"
